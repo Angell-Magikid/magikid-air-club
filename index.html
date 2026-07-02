@@ -767,6 +767,32 @@
             line-height: 1.6;
         }
 
+        /* Monthly Theme Tag */
+        .theme-tag {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 3px 10px;
+            border-radius: 100px;
+            margin-bottom: 10px;
+        }
+
+        .theme-tag.ai { background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(0,212,255,0.08)); color: var(--primary); border: 1px solid rgba(0,212,255,0.25); }
+        .theme-tag.robot { background: linear-gradient(135deg, rgba(123,45,255,0.15), rgba(123,45,255,0.08)); color: #A78BFA; border: 1px solid rgba(123,45,255,0.25); }
+        .theme-tag.nasa { background: linear-gradient(135deg, rgba(255,107,53,0.15), rgba(255,107,53,0.08)); color: var(--accent); border: 1px solid rgba(255,107,53,0.25); }
+        .theme-tag.inno { background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.08)); color: var(--gold); border: 1px solid rgba(255,215,0,0.25); }
+        .theme-tag.social { background: linear-gradient(135deg, rgba(76,217,100,0.15), rgba(76,217,100,0.08)); color: #4CD964; border: 1px solid rgba(76,217,100,0.25); }
+        .theme-tag.summary { background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); color: #fff; border: 1px solid rgba(255,255,255,0.15); }
+
+        .timeline-content .event-date {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--gold);
+            margin-top: 6px;
+            letter-spacing: 0.5px;
+        }
+
         /* Responsive */
         @media (min-width: 768px) {
             .hero h1 { font-size: 56px; }
@@ -926,14 +952,14 @@
             <div class="comp-header">
                 <div class="comp-icon">🤖</div>
                 <div class="comp-info">
-                    <h3>斯坦福 Humanoid Behavior Challenge</h3>
-                    <div class="comp-tag">每年11月初提交 · 全球同步</div>
+                    <h3>斯坦福 2026 BEHAVIOR Challenge</h3>
+                    <div class="comp-tag">提交截止 10月16日 · 获奖公布 11月4日</div>
                 </div>
             </div>
             <div class="comp-meta">
                 <span class="highlight">10人组队</span>
-                <span>人形机器人</span>
-                <span>线上</span>
+                <span>人形机器人行为建模</span>
+                <span>线上提交</span>
             </div>
         </div>
 
@@ -942,12 +968,12 @@
                 <div class="comp-icon">🚀</div>
                 <div class="comp-info">
                     <h3>NASA SPACE APPS CHALLENGE</h3>
-                    <div class="comp-tag">每年11月 · 全球最大太空黑客松</div>
+                    <div class="comp-tag">11月14-15日 · 全球最大太空黑客松</div>
                 </div>
             </div>
             <div class="comp-meta">
                 <span class="highlight">组队</span>
-                <span>美国现场/中国预选赛</span>
+                <span>线上参赛</span>
             </div>
         </div>
 
@@ -955,13 +981,13 @@
             <div class="comp-header">
                 <div class="comp-icon">⚡</div>
                 <div class="comp-info">
-                    <h3>AIR Innovation 黑客松</h3>
-                    <div class="comp-tag">每年12月 · MAGIKID联合举办</div>
+                    <h3>CES Innovation Hackathon</h3>
+                    <div class="comp-tag">1月6-9日 CES 现场决赛</div>
                 </div>
             </div>
             <div class="comp-meta">
                 <span class="highlight">5人组队</span>
-                <span>联合DOBOT、特斯拉、OpenAI、Anthropic、Kimi</span>
+                <span>拉斯维加斯现场</span>
             </div>
         </div>
     </div>
@@ -1017,191 +1043,153 @@
 <section class="section">
     <div class="section-header">
         <div class="section-tag">2026-2027 SEASON</div>
-        <h2 class="section-title">全年活动安排</h2>
-        <p class="section-desc">第一阶段 · 2026年7月 — 2027年6月<br>中美双线路 + 全球同步赛事</p>
-    </div>
-
-    <div class="track-tabs">
-        <button class="track-tab active" onclick="switchTrack('china', event)">🇨🇳 中国线路</button>
-        <button class="track-tab" onclick="switchTrack('us', event)">🇺🇸 美国线路</button>
-    </div>
-
-    <!-- China Track -->
-    <div id="china-track" class="track-content active">
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot">7月</div>
-                <div class="timeline-content">
-                    <h4>WAIRC 世界人工智能大会</h4>
-                    <p>现场学习，观摩全球最前沿AI技术</p>
-                    <div class="location">📍 上海</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot">8月</div>
-                <div class="timeline-content">
-                    <h4>深圳 DOBOT 机械臂 Workshop</h4>
-                    <p>5人组队，工业级机械臂实操训练</p>
-                    <div class="location">📍 深圳</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot">9月</div>
-                <div class="timeline-content">
-                    <h4>杭州 宇树人形机器人 Workshop</h4>
-                    <p>5人组队，人形机器人前沿技术实践</p>
-                    <div class="location">📍 杭州</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot">10月</div>
-                <div class="timeline-content">
-                    <h4>AIR Space Apps</h4>
-                    <p>北京活动 + NASA Space Apps 预选赛</p>
-                    <div class="location">📍 北京 / 线上</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot">11月</div>
-                <div class="timeline-content">
-                    <h4>斯坦福人形机器人 Behavior Challenge</h4>
-                    <p>全球同步，线上提交</p>
-                    <div class="location">🌍 全球同步</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot">12月</div>
-                <div class="timeline-content">
-                    <h4>AIR 黑客松 Workshop</h4>
-                    <p>5人组队，实战黑客松</p>
-                    <div class="location">🌍 全球同步</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- US Track -->
-    <div id="us-track" class="track-content">
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot">7月</div>
-                <div class="timeline-content">
-                    <h4>AIR Workshop + 比赛</h4>
-                    <p>专项集训 + 实战比赛</p>
-                    <div class="location">📍 美国</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot">8月</div>
-                <div class="timeline-content">
-                    <h4>斯坦福生物实验室项目</h4>
-                    <p>科研项目研究学习</p>
-                    <div class="location">📍 斯坦福</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot">9月</div>
-                <div class="timeline-content">
-                    <h4>人形机器人 Workshop + 比赛</h4>
-                    <p>专项集训 + 实战比赛</p>
-                    <div class="location">📍 美国</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot">10月</div>
-                <div class="timeline-content">
-                    <h4>NASA JPL Tour + 现场预选赛</h4>
-                    <p>参观喷气推进实验室 + Space Apps 预选</p>
-                    <div class="location">📍 加州 JPL</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot">11月</div>
-                <div class="timeline-content">
-                    <h4>斯坦福人形机器人 Behavior Challenge</h4>
-                    <p>全球同步，线上提交</p>
-                    <div class="location">🌍 全球同步</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot">12月</div>
-                <div class="timeline-content">
-                    <h4>AIR 黑客松 Workshop</h4>
-                    <p>5人组队，实战黑客松</p>
-                    <div class="location">🌍 全球同步</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Global Events Subtitle -->
-    <div class="section-header" style="margin-top:48px; margin-bottom:24px;">
-        <div class="section-tag">GLOBAL EVENTS</div>
-        <h2 class="section-title" style="font-size:20px;">全球同步 & 国际赛事</h2>
+        <h2 class="section-title">全年教学和活动安排</h2>
+        <p class="section-desc">第一阶段 · 2026年7月 — 2027年6月<br>每月教学主题 + 对应赛事活动，全年贯通</p>
     </div>
 
     <div class="timeline">
+        <!-- 7月 -->
         <div class="timeline-item">
-            <div class="timeline-dot" style="border-color:var(--gold); color:var(--gold); box-shadow: 0 0 20px rgba(255,215,0,0.2);">1月</div>
+            <div class="timeline-dot" style="border-color:var(--primary); color:var(--primary);">7月</div>
             <div class="timeline-content">
-                <h4>CES 拉斯维加斯</h4>
-                <p>现场学习 + AIR 黑客松</p>
+                <span class="theme-tag ai">🤖 AI · 机器人形发展</span>
+                <h4>AI 机器人形发展趋势与前沿</h4>
+                <p>人形机器人行业全景学习 · Behavior Challenge 官方启动（07/01）<br>斯坦福 2026 BEHAVIOR Challenge 开题研讨</p>
+                <div class="location">🌍 线上 + 📍 深圳</div>
+            </div>
+        </div>
+
+        <!-- 8月 -->
+        <div class="timeline-item">
+            <div class="timeline-dot">8月</div>
+            <div class="timeline-content">
+                <span class="theme-tag robot">🦾 人形机械臂</span>
+                <h4>深圳 DOBOT 机械臂 Workshop</h4>
+                <p>工业级机械臂实操训练 · 人形机械臂核心技术深度解析</p>
+                <div class="location">📍 深圳</div>
+            </div>
+        </div>
+
+        <!-- 9月 -->
+        <div class="timeline-item">
+            <div class="timeline-dot">9月</div>
+            <div class="timeline-content">
+                <span class="theme-tag robot">🤖 人形机器人</span>
+                <h4>斯坦福 Humanoid Behavior Challenge 备赛集训</h4>
+                <p>人形机器人行为建模专项训练 · 模拟仿真环境实操<br>Baseline 研读 + 团队方案设计</p>
+                <div class="location">🌍 线上</div>
+            </div>
+        </div>
+
+        <!-- 10月 -->
+        <div class="timeline-item">
+            <div class="timeline-dot" style="border-color:var(--gold); color:var(--gold); box-shadow: 0 0 20px rgba(255,215,0,0.3);">10月</div>
+            <div class="timeline-content">
+                <span class="theme-tag nasa">🚀 NASA Space Apps Challenge</span>
+                <h4>NASA Space Apps 教学备赛 + 斯坦福 Behavior 提交</h4>
+                <p>太空技术专题课程 · Space Apps 项目孵化<br><b style="color:var(--gold);">⚡ 斯坦福 2026 BEHAVIOR Challenge 截止提交：10月16日</b></p>
+                <div class="event-date">📅 10月16日 Deadline</div>
+                <div class="location">🌍 全球同步（线上）</div>
+            </div>
+        </div>
+
+        <!-- 11月 -->
+        <div class="timeline-item">
+            <div class="timeline-dot">11月</div>
+            <div class="timeline-content">
+                <span class="theme-tag nasa">🚀 NASA Space Apps Challenge</span>
+                <h4>NASA SPACE APPS CHALLENGE 正式比赛</h4>
+                <p>全球最大太空黑客松 · 48小时极限挑战<br>斯坦福 Behavior Challenge 获奖名单公布（11/4）</p>
+                <div class="event-date">📅 November 14-15（线上）</div>
+                <div class="location">🌍 全球同步（线上）</div>
+            </div>
+        </div>
+
+        <!-- 12月 -->
+        <div class="timeline-item">
+            <div class="timeline-dot">12月</div>
+            <div class="timeline-content">
+                <span class="theme-tag inno">💡 Innovation</span>
+                <h4>CES Innovation Hackathon 项目初选</h4>
+                <p>Innovation 黑客松项目立项与初步开发<br>CES 展前项目打磨 · 方案评审</p>
+                <div class="location">🌍 线上</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- H2 Subtitle: 下半年 -->
+    <div class="section-header" style="margin-top:48px; margin-bottom:24px;">
+        <div class="section-tag" style="color:var(--secondary);">H2 2027</div>
+        <h2 class="section-title" style="font-size:20px;">国际赛事 & 年度收官</h2>
+    </div>
+
+    <div class="timeline">
+        <!-- 1月 -->
+        <div class="timeline-item">
+            <div class="timeline-dot" style="border-color:var(--gold); color:var(--gold); box-shadow: 0 0 20px rgba(255,215,0,0.3);">1月</div>
+            <div class="timeline-content">
+                <span class="theme-tag inno">💡 Innovation</span>
+                <h4>CES 拉斯维加斯 · Innovation Hackathon 现场</h4>
+                <p>全球消费电子展现场学习 · AIR Innovation Hackathon 决赛</p>
+                <div class="event-date">📅 January 6-9</div>
                 <div class="location">📍 Las Vegas</div>
             </div>
         </div>
 
+        <!-- 2月 -->
         <div class="timeline-item">
             <div class="timeline-dot">2月</div>
             <div class="timeline-content">
+                <span class="theme-tag robot">🤖 AI 机器人</span>
                 <h4>VAIRC 国际公开赛</h4>
-                <p>10人组队，洛杉矶·加州理工</p>
+                <p>10人组队 · AI机器人国际公开赛<br>洛杉矶·加州理工现场竞技</p>
                 <div class="location">📍 洛杉矶 · 加州理工</div>
             </div>
         </div>
 
+        <!-- 3月 -->
         <div class="timeline-item">
             <div class="timeline-dot">3月</div>
             <div class="timeline-content">
-                <h4>AIR Innovation 种子 Workshop</h4>
-                <p>中美加澳各地举办活动</p>
+                <span class="theme-tag ai">🏆 奥AI</span>
+                <h4>奥AI 入门 & 同步集训</h4>
+                <p>AI奥林匹克竞赛入门课程 · 中美加澳各地同步备赛启动</p>
                 <div class="location">🌍 全球多地</div>
             </div>
         </div>
 
+        <!-- 4月 -->
         <div class="timeline-item">
             <div class="timeline-dot">4月</div>
             <div class="timeline-content">
-                <h4>奥林匹克AI同步备赛</h4>
-                <p>1-4人组队，中美加澳各地组织</p>
-                <div class="location">🌍 全球多地</div>
+                <span class="theme-tag social">❤️ 公益项目</span>
+                <h4>VEX 世锦赛志愿者</h4>
+                <p>公益志愿服务 · VEX 世锦赛现场支持与观摩学习</p>
+                <div class="location">📍 美国 / 🇨🇳 中国赛区</div>
             </div>
         </div>
 
+        <!-- 5月 -->
         <div class="timeline-item">
-            <div class="timeline-dot">5月</div>
+            <div class="timeline-dot" style="border-color:var(--gold); color:var(--gold); box-shadow: 0 0 20px rgba(255,215,0,0.25);">5月</div>
             <div class="timeline-content">
-                <h4>VAIRC AI世锦赛</h4>
-                <p>10人组队，硅谷·伯克利大学</p>
-                <div class="location">📍 硅谷 · 伯克利</div>
+                <span class="theme-tag robot">🤖 AI 机器人</span>
+                <h4>VAIRC 伯克利世锦赛 + Automate + Innovate 世锦赛</h4>
+                <p>10人组队 · VAIRC AI 世锦赛硅谷·伯克利大学<br>Automate 自动化展会参观学习 · AI机器人Innovate世锦赛</p>
+                <div class="event-date">📅 Automate May 10-13</div>
+                <div class="location">📍 硅谷 · 伯克利 + Las Vegas</div>
             </div>
         </div>
 
+        <!-- 6月 -->
         <div class="timeline-item">
             <div class="timeline-dot" style="border-color:var(--gold); color:var(--gold);">6月</div>
             <div class="timeline-content">
-                <h4>AutoMate 拉斯维加斯</h4>
-                <p>现场学习 + AIR 黑客松</p>
-                <div class="location">📍 Las Vegas</div>
+                <span class="theme-tag summary">🎯 总结回顾</span>
+                <h4>年度总结大会</h4>
+                <p>年度成果回顾 · 成果展示 · 颁奖典礼<br>下一赛季规划发布</p>
+                <div class="event-date">📅 线上 / 线下待定</div>
+                <div class="location">🌍 待定</div>
             </div>
         </div>
     </div>
